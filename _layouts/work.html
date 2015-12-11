@@ -1,0 +1,44 @@
+---
+layout: default
+---
+{% for post in site.categories['work'] %}
+  <h2>About</h2>
+  <section class="thumbnails clearfix">
+    {% if post.about %}
+    <a href='{{ site.baseurl }}{{ post.url }}'>
+      <h3>{{ post.title }}</h3>
+      <img class="2x" width="300" height="300" src="/public/images/{{ post.thumbnail }}"/>
+    </a>
+    {% endif %}
+  </section>
+  <hr>
+  <h2>Professional</h2>
+  <section class="thumbnails clearfix">
+    {% if post.professional %}
+    <a href='{{ site.baseurl }}{{ post.url }}'>
+      <h3>{{ post.title }}</h3>
+      <img class="2x" width="300" height="300" src="/public/images/{{ post.thumbnail }}"/>
+    </a>
+    {% endif %}
+  </section>
+  <hr>
+  <h2>Education</h2>
+  <section class="thumbnails clearfix">
+    {% if post.education %}
+    <a href='{{ site.baseurl }}{{ post.url }}'>
+      <h3>{{ post.title }}</h3>
+      <img class="2x" width="300" height="300" src="/public/images/{{ post.thumbnail }}"/>
+    </a>
+    {% endif %}
+  </section>
+  <hr>
+  <h2>Skills</h2>
+  <section class="thumbnails clearfix">
+    {% if post.skill %}
+    <a href='{{ site.baseurl }}{{ post.url }}'>
+      <h3>{{ post.title }}</h3>
+      <img class="2x" width="300" height="300" src="/public/images/{{ post.thumbnail }}"/>
+    </a>
+    {% endif %}
+  </section>
+{% endfor %}

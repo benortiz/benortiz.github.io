@@ -1,0 +1,93 @@
+/* Clearfix */
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+img {
+	max-width: 100%;
+}
+
+.thumbnails {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.thumbnails a {
+	width: 49%;
+	float: left;
+	position: relative;
+}
+
+.thumbnails a {
+		margin-right: 2%;
+		margin-top: 2%;
+}
+
+.thumbnails a:nth-child(1), .thumbnails a:nth-child(2) {
+		margin-top: 0;
+}
+
+.thumbnails a:nth-child(2n) {
+	margin-right: 0;
+}
+
+.thumbnails a, .thumbnails a span {
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+.thumbnails a img {
+	display: block;
+	background: #fff;
+	width: 100%;
+	height: auto;
+	border-radius: 0px;
+}
+
+.thumbnails a span {
+	color: #999;
+	display: inline-block;
+	display: none;
+	font-size: 15px;
+	font-weight: 400;
+	margin: 20px 0;
+}
+
+.thumbnails a:hover {
+	opacity: .85;
+}
+
+.thumbnails a:hover span {
+	opacity: 1;
+	visibility: visible;
+}
+
+.thumbnails h3 {
+	text-align: left;
+}
+
+.map {
+	margin-top: 60px;
+	width: 100%;
+}
+
+@media screen and (max-width: 540px) {
+}
+
+@media screen and (max-width:440px) {
+	#thumbnails a:nth-child(n) {
+		width: 100%;
+		max-width: 300px;
+		margin: 0 auto;
+		margin-top: 20px;
+		display: inline-block;
+		float: none;
+	}
+
+	#thumbnails a:first-child { margin-top: 0; }
+}
