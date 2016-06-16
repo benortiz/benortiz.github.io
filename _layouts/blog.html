@@ -4,16 +4,12 @@ layout: default
 
 <div class="posts">
   {% for post in site.categories['blog'] %}
-  <article class="post">
-    <h1 class="post-title">
+  <article class="blog-post">
+    <h2 class="blog-post--title">
       <a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
       </a>
-    </h1>
-
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date: "%B %-d, %Y" }}</time>
-
-    {{ post.content }}
+    </h2>
   </article>
   {% endfor %}
 </div>

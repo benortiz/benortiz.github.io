@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<section class="project thumbnails clearfix">
+  {% for post in site.categories['projects'] %}
+    <a href='{{ site.baseurl }}{{ post.url }}'>
+      <img class="2x" width="300" height="300" src="/public/images/{{ post.thumbnail }}"/>
+      <span>{{ post.title }}</span>
+    </a>
+  {% endfor %}
+</section>

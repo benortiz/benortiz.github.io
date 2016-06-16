@@ -3,8 +3,7 @@
 // Each post is wrapped in `.post` and is used on default and post layouts. Each
 // page is wrapped in `.page` and is only used on the page layout.
 
-.page,
-.post {
+.page {
   margin-bottom: 4em;
 }
 
@@ -29,10 +28,18 @@
 
 
 // Related posts
+@media (max-width: 792px) {
+  .related {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid #eee;
+  }
+}
+
 .related {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  border-top: 1px solid #eee;
+  h2 {
+    margin-top: 0px;
+  }
 }
 
 .related-posts {

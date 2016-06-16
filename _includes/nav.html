@@ -1,0 +1,8 @@
+<ul class="nav navbar-nav">
+  {% assign url = page.url | downcase | split: '/' %}
+  {% for link in site.navigation %}
+    <li {% if url[1] == link.activeurl %}class="active"{% endif %}>
+      <a href="{{link.url}}">{{link.text}}</a>
+    </li>
+  {% endfor %}
+</ul>
