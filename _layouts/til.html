@@ -6,7 +6,7 @@ layout: default
   {% for post in site.categories['til'] %}
   <div class="row til">
     <div class="col-xs-12 col-sm-3">
-      <h2 class="text-right">
+      <h2 class="text-right h4">
         <small>
           <time datetime="{{ post.date | date_to_xmlschema }}" class="til-date">
             {{ post.date | date: "%B %-d, %Y" }}
@@ -15,7 +15,7 @@ layout: default
       </h2>
     </div>
     <div class="col-xs-12 col-sm-9">
-      <h2 class="til-title">
+      <h2 class="til-title h4">
         <a href="{{ site.baseurl }}{{ post.url }}">
           {{ post.title }}
         </a>

@@ -16,7 +16,7 @@ body.full-screen {
   position:absolute;
   top:50%;
   width:100%;
-  color:#222;
+  color:$brand-primary;
   -ms-transform: translate(0,-50%); /* IE 9 */
   -webkit-transform: translate(0,-50%); /* Safari */
   transform: translate(0,-50%);

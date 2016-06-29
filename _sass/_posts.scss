@@ -23,7 +23,7 @@
   display: block;
   margin-top: -.5rem;
   margin-bottom: 1rem;
-  color: #9a9a9a;
+  color: $gray-light;
 }
 
 
@@ -48,21 +48,5 @@
 
   h3 {
     margin-top: 0;
-  }
-
-  li {
-    small {
-      font-size: 75%;
-      color: #999;
-    }
-
-    a:hover {
-      color: #268bd2;
-      text-decoration: none;
-
-      small {
-        color: inherit;
-      }
-    }
   }
 }
